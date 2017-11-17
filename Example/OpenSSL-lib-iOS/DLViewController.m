@@ -7,6 +7,7 @@
 //
 
 #import "DLViewController.h"
+#import <openssl/x509.h>
 
 @interface DLViewController ()
 

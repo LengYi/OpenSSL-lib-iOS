@@ -27,3 +27,13 @@ pod 'OpenSSL-lib-iOS'
 ## License
 
 OpenSSL-lib-iOS is available under the MIT license. See the LICENSE file for more info.
+
+
+# OpenSSL-iOS
+根据最新官方源码编译的 OpenSSL iOS 库, 官方网址: https://www.openssl.org/source/
+
+1.cd OpenSSL-iOS/Build    
+2.运行 ./build-libssl.sh 脚本 运行后如果同级目录下有 openssl-1.0.2l.tar.gz包则直接编译,否则先下载该包(时间略久)  编译之前先修改脚本内容  VERSION="1.0.2l" 为指定的原始包版本
+3.运行 ./create-openssl-framework.sh 编译成openssl.framework包
+4.将openssl.framework 拷贝至 /OpenSSL-iOS/OpenSSL-iOS/Vendors/目录下
+5.编辑更新OpenSSL-iOS.podspec
