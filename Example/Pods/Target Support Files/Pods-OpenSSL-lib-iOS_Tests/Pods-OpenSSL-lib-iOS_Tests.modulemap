@@ -1,0 +1,6 @@
+framework module Pods_OpenSSL_lib_iOS_Tests {
+  umbrella header "Pods-OpenSSL-lib-iOS_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
